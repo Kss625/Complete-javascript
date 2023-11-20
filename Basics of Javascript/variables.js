@@ -44,7 +44,15 @@ console.log(student["age"]);
 student["age"]=student["age"]+1;
 console.log(student.age);
 
-
+// swapping of two numbers
+let num1,num2;
+num1=6;
+num2=8;
+console.log(`Before Swapping: num1=${num1},num2=${num2}`)
+num3 = num1+num2;
+num1=num3-num1;
+num2 = num3-num2;
+console.log(`After Swapping: num1=${num1},num2=${num2}`)
 
 
 
