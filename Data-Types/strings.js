@@ -2,6 +2,7 @@
 let str = "Apna College";
 let str2 = "    Sushant kumar   ";
 
+// strings methods
 console.log(typeof str,str.length,str2.length);// no need to round brackets
 console.log(str[0],str[6])//finding characters using index values
 console.log(str.toLowerCase())
@@ -14,6 +15,8 @@ console.log(str.endsWith("ege"),str.startsWith("apna"))
 console.log(str.indexOf("llege"),str.search("llege"));// use to find the index value of given substring
 console.log(str.charAt(9))//used to find character using given index value
 
+
+// some information
 
 // substring And slice method
 // The substring() method swaps its two arguments if indexStart is greater than indexEnd, meaning that a string is still returned. The slice() method returns an empty string if this is the case.
