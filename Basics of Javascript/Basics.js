@@ -13,8 +13,9 @@ console.log("Youtube\'s web2karn")
 
 console.log(typeof "skarn","S  karn".length)
 
-
-
+/*
+let be clear that prompt,alert function not run in vs code so used in browser by merging with html
+*/
 
 
 

@@ -1,3 +1,4 @@
+// voting eligibility
 let age = 5;
 if(age>18){
     console.log("Able to vote")
@@ -5,6 +6,7 @@ if(age>18){
     console.log("Not Able to vote")
 }
 
+// even or odd
 let num = 20;
 
 if (num%2===0){
@@ -12,7 +14,7 @@ if (num%2===0){
 }else{
     console.log(num,"Odd Number");
 }
-
+// classification of human based on their age
 let age1 = 100;
 if(age1<18){
     console.log("Junior")
@@ -28,7 +30,7 @@ let age2=34;
 let answer = age2>18 ? "adult" : "Not adult";
 console.log(answer)
 
-// switch statement
+// switch statement-not so use by so many developer
 const foo = 0;
 switch (foo) {
   case -1:
