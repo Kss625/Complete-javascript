@@ -118,7 +118,8 @@ const myArray2 = ["value1", "value2", "value3","value4","value5"];
 let [var1, var2,...NewArray] = myArray2;
 console.log(var1, var2, NewArray);
 
-
+let test = (1,2,34,67);// number in javascript
+console.log(test,typeof test);
 
 
 
