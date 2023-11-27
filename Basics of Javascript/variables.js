@@ -1,22 +1,32 @@
 // A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence
-age=20//type number
+//typeof used to give a data type of variables
+
+// 7 primitive Data-Type in JS(number,string,boolean,undefined,null,BigInt,Symbol)-non reference 
+// non-primitive data types in JS(objects,array,)-reference data types
+
+age=20//number
 age=age+1
-Name="sushant karn"//type string
-console.log(age , typeof age,Name,typeof Name)//typeof used to give a data type of variables
+Name="Sushant karn"//string
+console.log(age , typeof age,Name,typeof Name)
 
 
-car=null//type object
-knowledge=undefined//type undefined
-console.log(car,knowledge,typeof knowledge,typeof car);
-married=false//type boolean
+car=null//object
+knowledge=undefined//undefined
+let num;//undefined
+
+
+console.log(car,knowledge,typeof knowledge,typeof car,num,typeof num);
+
+married=false//boolean
 console.log(married,typeof married)
 
-college=Symbol("DSEU")
+college=Symbol("DSEU")//symmbol
 console.log(college,typeof college);
-roll_no=BigInt(12345)
+
+roll_no=BigInt(12345)//BigInt
 console.log(roll_no,typeof roll_no);
 
-// above way is not prefer to define variables
+// above way without let,const,var is not prefer to define variables
 // let , const , var
 
 // let keyword,
@@ -27,11 +37,11 @@ console.log(name);
 
 // const keyword-cannot be re-declared and cannot be updated,block scope variable
 
-//var keyword-cannot be re-declared and cannot be updated,global scope variables
+//var keyword-can be re-declared and can be updated,global scope variables
 
-// 7 primitive Data-Type in JS(number,string,boolean,undefined,null,BigInt,Symbol)-non reference 
 
-// non-primitive data types in JS(objects,array,)-reference data types
+
+
 
 const student={
     fullName: "Sushant Kumar",
@@ -48,7 +58,7 @@ console.log(student.age);
 let num1,num2;
 num1=6;
 num2=8;
-console.log(`Before Swapping: num1=${num1},num2=${num2}`)
+console.log(`Before Swapping: num1=${num1},num2=${num2}`)//template strings
 num3 = num1+num2;
 num1=num3-num1;
 num2 = num3-num2;

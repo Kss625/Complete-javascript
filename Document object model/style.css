@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(145, 241, 237);
+}
+
+
+h1 {
+    color:blue;
+    text-decoration: "line-through";
+    background-color:coral;
+}
+
+p {
+    color: darkgreen;
+}

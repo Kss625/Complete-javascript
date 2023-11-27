@@ -1,47 +1,39 @@
-// function declaration
+// 1. function declaration
+// First Way
+/*
 
-// function singHappyBirthday(){
-//     console.log("Happy birthday")
-// }
+function singHappyBirthday(){
+    console.log("Happy birthday")
+}
 
-// singHappyBirthday();// calling the function
+singHappyBirthday();// calling the function
 
-// function sumTwoNumbers(number1,number2){
-//     return number1 + number2
-// }
-
-// console.log(sumTwoNumbers(4,6))//printing the returning value
+*/
 
 
-// question
-// function isEven(number){
-//     if(number%2==0){
-//         return true;
-//     }else{
-//         return false;
-//     }
-// }
+/*
+function sumTwoNumbers(number1,number2){
+    return number1 + number2
+}
 
-// console.log(isEven(7))// false
+console.log(sumTwoNumbers(4,6))//printing the returning value
+*/
 
-// function firstchar(anyString){
-//     return anyString[0];
-// }
-// console.log(firstchar("Hello world"))
+/*
+function targetindex(array,target){
+    for(let index in array){
+        if (array[index]==target){
+            return index;
+        }
+    }
+    return -1;
+}
 
-// function targetindex(array,target){
-//     for(let index in array){
-//         if (array[index]==target){
-//             return index;
-//         }
-//     }
-//     return -1;
-// }
-
-// console.log(targetindex([1,2,3,4,5],4))
+console.log(targetindex([1,2,3,4,5],4))
+*/
 
 
-// function expression
+// 2. function expression
 // const isEven = function(number){
 //     return number%2===0;
 // }
@@ -49,7 +41,7 @@
 
 // console.log(isEven(8))
 
-/* Arrow Functions */
+/* 3.  Arrow Functions */
 
 // const isEven = (number)=>{
 //     return number%2===0;
@@ -57,10 +49,10 @@
 
 // console.log(isEven(7));
 
-/* hoisting */
+/* 3. hoisting */
 
 
-// hello()//hello world
+// hello()//not defined yet in function declaration but also gives hello world 
 // function hello(){
 //     console.log("hello world");
 // }
@@ -70,7 +62,7 @@
 //     console.log("hello world");
 // }
 
-/* function inside function */
+/* 4. function inside function */
 
 // const app =()=>{
 //     const myfunc=()=>{
@@ -87,7 +79,7 @@
 
 
 
-/* lexical scope */
+/* 5. lexical scope */
 // const myVar = "value1";
 // function myApp(){
 //     function myfunc(){
@@ -99,7 +91,7 @@
 // }
 // myApp();
 
-// // default parameters
+// 6. default parameters
 
 // function addTwo(a,b=8){// default parameters
 //     return a+b;
@@ -108,7 +100,7 @@
 // const ans = addTwo(6);
 // console.log(ans)
 
-// // rest parameters
+// 7. rest parameters
 
 // function myFunc(a,b,...c){// saare bache hue 3,5 ke alawa c me chale jayenge array ke form me
 //     console.log(`a is ${a},b is ${b},c is ${c}`);
@@ -127,7 +119,7 @@
 // }
 // console.log(addAll(1,2,3,4,5))
 
-// param destructuring
+// 8. param destructuring
 
 // const person={
 //     first_name:"sushant",
@@ -137,14 +129,15 @@
 //     console.log(obj.first_name);
 //     console.log(obj.gender);
 // }
-// function printDetails({first_name, gender}){
-//     console.log(first_name);
-//     console.log(gender);
+// function printDetails({first_name:Name, gender:Gender}){
+//     console.log(Name);
+//     console.log(Gender);
 // }
 
 // printDetails(person)
+// printDetails(person);
 
-// callback functions
+// 9.  callback functions
 
 
 // function myfunc2(name){
@@ -156,20 +149,17 @@
 //     a("sushant");
 // }
 
-// // myfunc([1,2,3,4]);
-// // myfunc("sushant");
-// // myfunc(6);
 // myfunc(myfunc2)
 
-// function returning function
-function myfunc(){
-    function hello(){
-        console.log("hello");
-    }
-    return hello;
-}
-const ans = myfunc();
-ans();
+// 10. function returning function
+// function myfunc(){
+//     function hello(){
+//         console.log("hello123");
+//     }
+//     return hello;
+// }
+// const ans = myfunc();
+// ans();
 
 
 
